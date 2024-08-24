@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 
 export default function List() {
   const [products, setProducts] = useState([]);
-  const url = "http://localhost:4000";
+  const url = "https://swiftpick-e-commerce.onrender.com";
 
   const fetchProducts = async () => {
     try {

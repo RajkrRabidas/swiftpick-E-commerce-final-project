@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import axios from "axios";
 
 export default function Add() {
-  const url = "http://localhost:4000";
+  const url = "https://swiftpick-e-commerce.onrender.com";
   const [productData, setProductData] = useState({
     name: "",
     price: "",
