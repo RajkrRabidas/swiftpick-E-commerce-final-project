@@ -1,0 +1,42 @@
+.icon-cart{
+    text-decoration: none;
+}
+.f-link a{
+    color: rgba(15, 14, 14, 0.877);
+    text-decoration: none;
+}
+.small-img-group {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.small-img-col {
+flex-basis: 24%;
+cursor: pointer;
+margin: 0.5rem;
+}
+.sproduct select{
+display: block;
+padding: 5px 10px;
+font-size: 16px;
+outline: none;
+}
+.sproduct input{
+width: 50px;
+height: 38px;
+padding-left: 10px;
+font-size: 16px;
+margin-right: 10px;
+}
+.sproduct input:focus{
+outline: none;
+}
+.buy-btn{
+background-color: #f1462f;
+color: #fff;
+opacity: 1;
+transform: .5s all;
+}
+.products-text{
+font-size: 16px;
+}

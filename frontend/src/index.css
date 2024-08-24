@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+  }
+
+  #main {
+    max-width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+@media (max-width: 640px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cartTab{
+    height: 90vh;
+  }
+  #main {
+    max-width: 100%;
+  }
+
+  .hero {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .header {
+    padding: 1.5rem 3rem;
+  }
+
+  .navbar i {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .full-div {
+    width: 70%;
+    height: 100vh;
+    background-color: rgb(188 123 74);
+    position: fixed;
+    top: 0;
+    right: -70%;
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    padding: 9rem 3rem;
+    overflow: hidden;
+    transition: right 0.2s ease;
+    z-index: 99;
+  }
+
+  .full-div.open {
+    right: 0;
+  }
+
+  .full-div a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .full-div i {
+    position: absolute;
+    top: 6%;
+    right: 10%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .hero h1 {
+    line-height: 48px;
+    font-size: 6rem;
+  }
+
+  .hero {
+    gap: 4rem;
+  }
+
+  .icons {
+    gap: 4px;
+    font-size: 26px;
+  }
+  .icons span{
+    right: 70px;
+    z-index: 9;
+  }
+}
+
+@media (max-width: 962px) {
+  .hero h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 2rem 4rem;
+  }
+  .hero h1 {
+    font-size: 4rem;
+  }
+  .swiper-slide {
+    flex-shrink: 0 !important;
+    width: 100% !important;
+    margin: 0;
+}
+
+}
