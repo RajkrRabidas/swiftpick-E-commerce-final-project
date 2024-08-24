@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
+const DATABASE = require("../config/db.js")
 
 const connectDB = async () => {
   try {
     await mongoose.connect(
-      "mongodb+srv://atishRaj:atish889@cluster0.yo1bj.mongodb.net/swiptcart?"
+      process.env.DATABASE
     );
     console.log("DB Connected");
   } catch (error) {
