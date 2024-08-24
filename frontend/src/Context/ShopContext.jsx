@@ -21,7 +21,7 @@ const ShopContextProvider = (props) => {
 
   const [token, setToken] = useState(() => localStorage.getItem("token") || "");
   const [all_products, setAll_products] = useState([]);
-  const url = "http://localhost:4000";
+  const url = "https://swiftpick-e-commerce.onrender.com";
 
   // Save cart items to localStorage whenever they change
   useEffect(() => {
