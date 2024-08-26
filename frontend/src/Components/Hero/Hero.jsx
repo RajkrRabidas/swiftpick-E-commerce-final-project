@@ -1,7 +1,9 @@
 import React from "react";
 import "./Hero.css";
+import { Link, useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <>
       <section class="hero w-full h-[70vh] container mx-auto text-center grid grid-cols-1 md:grid-cols-2 items-center">
@@ -17,16 +19,16 @@ const Hero = () => {
             <p class="text-gray-700 mb-6">
               Elevate Your Style with the Latest in Clothing and Accessories
             </p>
-
-            <a
-              href="#"
-              class="bg-purple-500 text-2xl table text-white px-10 py-5 rounded-lg shadow hover:bg--800"
+            <button
+              onClick={() => {
+                console.log("button click")
+                navigate("/buy")}}
+              className="bg-purple-500 text-2xl table text-white px-10 py-5 rounded-lg shadow hover:bg-purple-800"
             >
               Buy Product
-            </a>
+            </button>
           </div>
         </div>
-
       </section>
     </>
   );

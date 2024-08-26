@@ -12,6 +12,7 @@ import LoginSingup from './Components/ShowLogin/LoginSingup';
 import Footer from './Components/Footer/Footer';
 import Order from './Components/Order/Order';
 import MyOrders from './Pages/MyOrders';
+import BuyProduct from './Pages/BuyProduct';
 
 function App() {
   const [showLogin, setShowLogin] = useState(false);
@@ -33,6 +34,7 @@ function App() {
           <Route path="/Order" element={<Order/>} />
           {/* <Route path="/Verify" element={<Verify />} /> */}
           <Route path="/MyOrders" element={<MyOrders />} />
+          <Route path="/buy" element={<BuyProduct/> } />
         </Routes>
         <Footer />
       </BrowserRouter>

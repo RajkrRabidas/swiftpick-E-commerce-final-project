@@ -39,17 +39,6 @@
     font-weight: 500;
   }
   
-  /* .navbar ul li a::before{
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    width: 100%;
-    height: 2px;
-    background-color: #333;
-    transform: scaleX(0);
-    transition: transform 0.5s ease-in-out;
-    transform-origin: right;
-  } */
   .navbar ul li a:hover::before{
     transform: scaleX(1);
     transform-origin: left;
@@ -105,15 +94,15 @@
 }
 
 #iconCartSpan {
-  position: absolute; /* Use absolute positioning inside the relative parent */
+  position: absolute;
   top: 15px;
   right: -11px;
-  background-color: #f1462f; /* Background color for the span */
-  color: white; /* Text color */
-  border-radius: 50%; /* Make the span circular */
-  padding: 5px 7px; /* Adjust padding for size */
-  font-size: 12px; /* Adjust font size */
-  z-index: 1000; /* Ensure it stays on top of other elements */
+  background-color: #f1462f; 
+  color: white;
+  border-radius: 50%;
+  padding: 5px 7px; 
+  font-size: 12px; 
+  z-index: 1000; 
 }
 
 
@@ -121,6 +110,9 @@
     border: 1px solid #161414b9;
     font-size: 15px;
     color: #333;
+  }
+  .icons button:active{
+    background-color: #eee;
   }
   
   .cartTab{

@@ -6,7 +6,7 @@ import { ShopContext } from '../../Context/ShopContext';
 const ProductHd = ({ product }) => {
   const {addToCart, url} = useContext(ShopContext)
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 lg:p-4 gap-8">
       <div className="w-full">
         <img
           className="w-full h-[50rem] object-contain"
